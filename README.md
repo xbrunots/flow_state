@@ -1,4 +1,4 @@
-# shadcn_flutter
+# flow_state
 ## [0.0.1]
 ![Pub Likes](https://img.shields.io/pub/likes/flow_state)
 ![Pub Points](https://img.shields.io/pub/points/flow_state)
