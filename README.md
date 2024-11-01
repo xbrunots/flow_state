@@ -95,9 +95,4 @@ print(flowCore.value);
 flowCore.stream.listen((data) => print(data));
 
 ```
-
-
-
-
-
-Using without borderplate
+ 
