@@ -75,4 +75,29 @@ class _TestePageState extends State<TestePage> with FlowState<UserModel> {
   }
 }
 
+``` 
+#### EXTRA. Using without boilerplate
+```dart
+
+/// create instance
+FlowCore get flowCore => FlowCore.newInstance(context);
+
+/// change a value
+flowCore.setValue = 12;
+
+/// change a value using emit
+flowCore.emit(12);
+
+/// read a value
+print(flowCore.value);
+
+/// listens to the values ​​emitted via stream
+flowCore.stream.listen((data) => print(data));
+
 ```
+
+
+
+
+
+Using without borderplate

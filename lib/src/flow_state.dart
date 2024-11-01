@@ -1,5 +1,3 @@
-
-
 import 'package:signals_flutter/signals_flutter.dart';
 
 import '../src/flow_viewmodel.dart';
@@ -13,9 +11,7 @@ mixin FlowState<T> {
 
   T get model => flow.watch(viewModel.context) ?? viewModel.initState;
 
-  emit(value) {
-    flow.set(value, force: true);
-  }
+  set emit(value) => flow.set(value, force: true);
 
   dispose() => flow.dispose();
 }
