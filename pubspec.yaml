@@ -3,7 +3,6 @@ description: "Reactive abstraction to facilitate complex architectures."
 version: 0.0.1
 homepage: https://github.com/xbrunots/flow_state
 repository: https://github.com/xbrunots/flow_state
-author: Bruno Brito <https://www.linkedin.com/in/brunosbrito>
 
 environment:
   sdk: ^3.5.1

@@ -4,6 +4,7 @@
 ![Pub Points](https://img.shields.io/pub/points/flow_state)
 ![Pub Version](https://img.shields.io/pub/v/flow_state)
 ![GitHub Repo stars](https://img.shields.io/github/stars/xbrunots/flow_state)
+ 
 
 The easiest way to make your project reactive (without the need for builders)
 
@@ -95,4 +96,7 @@ print(flowCore.value);
 flowCore.stream.listen((data) => print(data));
 
 ```
+
  
+[By Bruno Brito](https://www.linkedin.com/in/brunosbrito/)
+[@xbrunots](https://www.instagram.com/xbrunots/)
