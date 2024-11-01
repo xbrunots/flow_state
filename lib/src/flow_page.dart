@@ -16,5 +16,8 @@ mixin FlowPage<T extends StatefulWidget> on State<T> {
   emit(value) => _flowCore.emit(value);
 
   @override
-  dispose() => _flowCore.dispose();
+  dispose() {
+    super.dispose();
+    _flowCore.dispose();
+  }
 }
