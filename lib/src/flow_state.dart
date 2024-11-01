@@ -11,7 +11,9 @@ mixin FlowState<T> {
 
   T get model => flow.watch(viewModel.context) ?? viewModel.initState;
 
-  set emit(value) => flow.set(value, force: true);
+  set setValue(value) => flow.set(value, force: true);
+
+  emit(value) => flow.set(value, force: true);
 
   dispose() => flow.dispose();
 }

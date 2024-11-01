@@ -3,16 +3,18 @@ import 'package:flutter/material.dart';
 import 'flow_core.dart';
 
 mixin FlowPage<T extends StatefulWidget> on State<T> {
-  FlowCore get flowCore => FlowCore.newInstance(context);
+  FlowCore get _flowCore => FlowCore.newInstance(context);
 
-  get stream => flowCore.stream;
+  get stream => _flowCore.stream;
 
-  get flow => flowCore.flow;
+  get flow => _flowCore.flow;
 
-  get model => flowCore.value;
+  get model => _flowCore.value;
 
-  set emit(value) => flowCore.emit(value);
+  set setValue(value) => _flowCore.emit(value);
+
+  emit(value) => _flowCore.emit(value);
 
   @override
-  dispose() => flowCore.dispose();
+  dispose() => _flowCore.dispose();
 }
