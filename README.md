@@ -91,7 +91,7 @@ flowCore.emit(12);
 /// read a value
 print(flowCore.value);
 
-/// listens to the values ​​emitted via stream
+/// listens to the values via stream
 flowCore.stream.listen((data) => print(data));
 
 ```
